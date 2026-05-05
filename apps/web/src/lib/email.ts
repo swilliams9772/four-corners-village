@@ -72,7 +72,7 @@ export function emailShell(opts: { previewText: string; bodyHtml: string }): str
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Four Corners Village</title>
+    <title>4 Corners Village</title>
   </head>
   <body style="margin:0;padding:0;background:#0f172a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
     <span style="display:none;visibility:hidden;opacity:0;height:0;width:0;overflow:hidden;">${escapeHtml(opts.previewText)}</span>
@@ -82,7 +82,7 @@ export function emailShell(opts: { previewText: string; bodyHtml: string }): str
           <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;background:#1e293b;border:1px solid #334155;border-radius:12px;overflow:hidden;">
             <tr>
               <td style="padding:32px 32px 16px 32px;border-bottom:1px solid #334155;">
-                <p style="margin:0;font-size:14px;letter-spacing:2px;color:#fbbf24;text-transform:uppercase;">Four Corners Village</p>
+                <p style="margin:0;font-size:14px;letter-spacing:2px;color:#fbbf24;text-transform:uppercase;">4 Corners Village</p>
               </td>
             </tr>
             <tr>
@@ -92,7 +92,7 @@ export function emailShell(opts: { previewText: string; bodyHtml: string }): str
             </tr>
             <tr>
               <td style="padding:24px 32px;border-top:1px solid #334155;color:#64748b;font-size:12px;">
-                You're receiving this because you have a Four Corners Village account.
+                You're receiving this because you have a 4 Corners Village account.
                 <br />
                 <a href="${env.app.url}" style="color:#fbbf24;text-decoration:none;">${env.app.url}</a>
               </td>

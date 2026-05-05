@@ -1,4 +1,4 @@
-# Four Corners — Launch Playbook
+# 4 Corners Village — Launch Playbook
 
 A concrete, click-by-click runbook for taking the platform from "nothing provisioned" to a production soft-launch behind the waitlist gate. Each section produces a set of secrets that get pasted into the **Vercel env** at the matching scope (`Production`, `Preview`, `Development`).
 
@@ -147,7 +147,7 @@ In **Connect → Settings**:
 2. **Domains → Add Domain** → `fourcorners.village`. Resend prints DNS records (3 × TXT/CNAME/MX). Add them to the Cloudflare zone — DNS propagates within minutes since the zone is already on Cloudflare.
 3. Verify; once green, create an **API key** under Settings → API Keys. Paste:
    - `RESEND_API_KEY`
-   - `RESEND_FROM_EMAIL="Four Corners Village <hello@fourcorners.village>"`
+   - `RESEND_FROM_EMAIL="4 Corners Village <hello@4cornersvillage.com>"`
 
 ---
 
@@ -234,7 +234,7 @@ The app initializes PostHog client-side from `apps/web/src/lib/analytics.ts`. Se
    - **APNs auth key** for push (download `.p8`, save the Key ID + Team ID)
    - **Sign in with Apple key** (used in Supabase Apple provider config)
 4. **App Store Connect → My Apps → New App**:
-   - Name: Four Corners Village
+   - Name: 4 Corners Village
    - Primary language: English (U.S.)
    - Bundle ID: `village.fourcorners.app`
    - SKU: `four-corners-app`
@@ -249,7 +249,7 @@ EAS Submit will require an **App Store Connect API key** (Users & Access → Key
 
 1. Pay the $25 one-time fee at <https://play.google.com/console/signup>.
 2. **Create app**:
-   - App name: Four Corners Village
+   - App name: 4 Corners Village
    - Default language: English (United States)
    - App or game: App
    - Free or paid: Free (TV is a Reader-app pattern; see Phase 4 IAP decision)

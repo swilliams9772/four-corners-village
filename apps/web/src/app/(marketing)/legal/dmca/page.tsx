@@ -3,7 +3,7 @@ import { Eyebrow } from "@/components/ui/typography";
 
 export const metadata = {
   title: "DMCA Policy",
-  description: "How to file a DMCA takedown notice or counter-notice with Four Corners Village.",
+  description: "How to file a DMCA takedown notice or counter-notice with 4 Corners Village.",
 };
 
 export default function DmcaPage() {
@@ -17,14 +17,14 @@ export default function DmcaPage() {
         </p>
 
         <p>
-          Four Corners Village respects the intellectual property rights of others. Per the Digital
+          4 Corners Village respects the intellectual property rights of others. Per the Digital
           Millennium Copyright Act (17 U.S.C. § 512), we will respond expeditiously to claims of
           copyright infringement.
         </p>
 
         <h2>Designated agent</h2>
         <address className="not-italic">
-          Four Corners Village — DMCA Agent
+          4 Corners Village — DMCA Agent
           <br />
           Email:{" "}
           <a href="mailto:dmca@fourcorners.village">dmca@fourcorners.village</a>

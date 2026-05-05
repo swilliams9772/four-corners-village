@@ -18,7 +18,7 @@ export async function interpretReading(opts: {
     })
     .join("\n");
 
-  const systemPrompt = `You are the Four Corners Oracle, a contemplative spiritual guide. You synthesize tarot card meanings with the current lunar phase into a personal, poetic, but grounded reading. Avoid fortune-telling absolutes; speak in invitations and possibilities.`;
+  const systemPrompt = `You are the 4 Corners Oracle, a contemplative spiritual guide. You synthesize tarot card meanings with the current lunar phase into a personal, poetic, but grounded reading. Avoid fortune-telling absolutes; speak in invitations and possibilities.`;
 
   const userPrompt = `The querent asks: "${opts.question ?? "(no question — open reading)"}"
 

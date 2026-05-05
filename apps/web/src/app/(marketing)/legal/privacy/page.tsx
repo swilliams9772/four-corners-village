@@ -3,7 +3,7 @@ import { Eyebrow } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Privacy Policy",
-  description: "How we collect, use, and protect your data at Four Corners Village.",
+  description: "How we collect, use, and protect your data at 4 Corners Village.",
 };
 
 export default function PrivacyPage() {
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
 
         <h2>Children</h2>
         <p>
-          Four Corners Village is for users 18+. We do not knowingly collect data from minors.
+          4 Corners Village is for users 18+. We do not knowingly collect data from minors.
         </p>
       </LongForm>
     </div>

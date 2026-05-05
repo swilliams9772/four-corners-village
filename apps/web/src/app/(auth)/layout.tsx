@@ -21,7 +21,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 text-caption text-ink-muted">
-          <p>© {new Date().getFullYear()} Four Corners Village</p>
+          <p>© {new Date().getFullYear()} 4 Corners Village</p>
           <div className="flex gap-5">
             <Link href="/legal/terms" className="hover:text-ink-subtle">
               Terms

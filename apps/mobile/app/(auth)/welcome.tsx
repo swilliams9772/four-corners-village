@@ -19,7 +19,7 @@ export default function Welcome() {
 
         <View className="mt-10">
           <Text className="font-body uppercase tracking-[3px] text-ink-muted text-xs">
-            Four Corners
+            4 Corners Village
           </Text>
           <Text
             className="mt-3 font-display-bold text-ink leading-[0.95]"

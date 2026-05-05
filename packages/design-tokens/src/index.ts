@@ -1,5 +1,5 @@
 /**
- * Four Corners — Design Tokens
+ * 4 Corners Village — Design Tokens
  *
  * Single source of truth for color, type, space, motion.
  * Consumed by the web (Tailwind preset + CSS vars) and the mobile app

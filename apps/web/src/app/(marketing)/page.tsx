@@ -9,6 +9,7 @@ import { LunarOrbLive } from "@/components/ui/lunar-orb-live";
 import { ElementalChip } from "@/components/ui/elemental-chip";
 import { Section, Eyebrow, DisplayHeading, Lede } from "@/components/ui/typography";
 import { SacredDivider, FlowerOfLife, Mandala } from "@/components/brand/sacred-geometry";
+import { BrandMark } from "@/components/brand/brand-mark";
 import { DirectionGlyph } from "@/components/brand/direction-glyph";
 import { DirectionCard, FeatureCheck } from "@/components/site/direction-card";
 import { WaitlistForm } from "@/components/site/waitlist-form";
@@ -33,6 +34,15 @@ export default function Home() {
 
         <div className="mx-auto flex max-w-5xl flex-col items-center px-6 text-center lg:px-10">
           <Reveal>
+            <div
+              className="mb-10 drop-shadow-[0_18px_48px_rgba(251,191,36,0.18)]"
+              aria-hidden={false}
+            >
+              <BrandMark variant="medallion" size={140} title="4 Corners Village" />
+            </div>
+          </Reveal>
+
+          <Reveal delay={60}>
             <Badge variant="soft" className="mb-8">
               <Sparkle className="size-3 text-air" />
               Soft launching · 2026
@@ -143,7 +153,7 @@ export default function Home() {
                 practitioners into rigid environments that don't support business autonomy.
               </Lede>
               <Lede className="mb-10 text-ink-muted">
-                Four Corners introduces a paradigm shift: a multi-tenant digital real estate model
+                4 Corners Village introduces a paradigm shift: a multi-tenant digital real estate model
                 where practitioners lease sovereign spaces inside a unified ecosystem — a spiritual
                 WeWork for the digital age.
               </Lede>
@@ -215,7 +225,7 @@ export default function Home() {
                 <Tv className="size-3" /> New
               </Badge>
               <DisplayHeading level={2} className="mb-6">
-                Four Corners
+                4 Corners
                 <span className="block bg-gradient-to-br from-air via-fire to-lunar bg-clip-text text-transparent">
                   Vintage TV
                 </span>
@@ -435,7 +445,7 @@ export default function Home() {
               Build your digital sanctuary.
             </DisplayHeading>
             <Lede className="mx-auto mb-10 text-center">
-              Four Corners is launching publicly soon. Join the waitlist for early-practitioner access
+              4 Corners Village is launching publicly soon. Join the waitlist for early-practitioner access
               and Vintage TV founding-member pricing.
             </Lede>
             <div className="mx-auto max-w-md">

@@ -1,4 +1,4 @@
-# Four Corners Village
+# 4 Corners Village
 
 Next.js 16 App Router · Supabase · Stripe · Cloudflare Stream · Tailwind + shadcn/ui
 
@@ -8,7 +8,7 @@ This is the production application that replaces the original marketing-only Vit
 | - | - |
 | 0 | Marketing site (home, pricing, practitioners, legal), Supabase schema, env scaffolding |
 | 1 | Auth (email/password + Google + Apple), member dashboard, Stripe Customer Portal |
-| 2 | **Four Corners Vintage TV** — admin upload, browse, title pages, HLS player with watermark, $5.55/$55.55 paywall |
+| 2 | **4 Corners Vintage TV** — admin upload, browse, title pages, HLS player with watermark, $5.55/$55.55 paywall |
 | 3 | Practitioner application, sub-spaces (`/v/[slug]`), Stripe Connect Express, 85/15 destination charges, financial dashboard |
 | 4 | LMS (courses + modules + lessons), Zoom OAuth, Digital Altars (Realtime), Lunar sync, AI Oracle (Claude/OpenAI/heuristic) |
 | 5 | Legal (Terms, Privacy, DMCA), Sentry, error boundaries |
@@ -91,7 +91,7 @@ stripe listen --forward-to localhost:3000/api/webhooks/stripe
 1. Sign up at <https://resend.com>.
 2. Verify your sending domain.
 3. Create an API key, copy to `RESEND_API_KEY`.
-4. Set `RESEND_FROM_EMAIL` (e.g. `Four Corners <hello@fourcorners.village>`).
+4. Set `RESEND_FROM_EMAIL` (e.g. `4 Corners Village <hello@4cornersvillage.com>`).
 
 ### 5. Zoom (Phase 4 — Sanctuary tier)
 

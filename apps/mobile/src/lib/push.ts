@@ -30,7 +30,7 @@ export async function registerPushToken() {
 
   if (Platform.OS === "android") {
     await Notifications.setNotificationChannelAsync("default", {
-      name: "Four Corners",
+      name: "4 Corners Village",
       importance: Notifications.AndroidImportance.DEFAULT,
       vibrationPattern: [0, 200, 100, 200],
       lightColor: "#9D7EFF",

@@ -12,7 +12,7 @@ export const DEV_CATEGORIES: VideoCategory[] = [
   { id: "c3", slug: "ancestral-knowledge", name: "Ancestral Knowledge", description: "Indigenous wisdom and lineage teachings", display_order: 3, created_at: new Date().toISOString() },
   { id: "c4", slug: "cosmic-consciousness", name: "Cosmic Consciousness", description: "Astrology and the science of awakening", display_order: 4, created_at: new Date().toISOString() },
   { id: "c5", slug: "rituals-ceremonies", name: "Rituals & Ceremonies", description: "Witnessed sacred rituals", display_order: 5, created_at: new Date().toISOString() },
-  { id: "c6", slug: "village-originals", name: "Village Originals", description: "Documentaries produced exclusively for Four Corners", display_order: 6, created_at: new Date().toISOString() },
+  { id: "c6", slug: "village-originals", name: "Village Originals", description: "Documentaries produced exclusively for 4 Corners Village", display_order: 6, created_at: new Date().toISOString() },
 ];
 
 const dev = (slug: string, title: string, synopsis: string, category_id: string, durationMin = 52): Video => ({
@@ -117,7 +117,7 @@ export const DEV_SERIES: VideoSeries[] = [
   {
     id: "s1",
     slug: "four-corners-originals",
-    title: "Four Corners: Origins",
+    title: "4 Corners: Origins",
     synopsis: "A six-part documentary series tracing the indigenous roots of the four directions across continents.",
     poster_url: null,
     backdrop_url: null,

@@ -1,6 +1,6 @@
 # @four-corners/design-tokens
 
-The single source of truth for the Four Corners design system. Web (Tailwind) and mobile (NativeWind) consume the same tokens.
+The single source of truth for the 4 Corners Village design system. Web (Tailwind) and mobile (NativeWind) consume the same tokens.
 
 ## What's in here
 

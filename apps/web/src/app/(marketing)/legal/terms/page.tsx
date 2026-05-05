@@ -3,7 +3,7 @@ import { Eyebrow } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Terms of Service",
-  description: "The agreement between you and Four Corners Village.",
+  description: "The agreement between you and 4 Corners Village.",
 };
 
 export default function TermsPage() {
@@ -17,14 +17,14 @@ export default function TermsPage() {
         </p>
 
         <p>
-          Welcome to Four Corners Village (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;the
+          Welcome to 4 Corners Village (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;the
           Village&rdquo;). By creating an account or using any part of our services — including Four
           Corners Vintage TV, practitioner spaces, the Oracle, and Digital Altars — you agree to
           these terms.
         </p>
 
         <h2>1. Eligibility</h2>
-        <p>You must be at least 18 years old to use Four Corners Village.</p>
+        <p>You must be at least 18 years old to use 4 Corners Village.</p>
 
         <h2>2. Membership & Subscriptions</h2>
         <p>
@@ -42,7 +42,7 @@ export default function TermsPage() {
 
         <h2>4. Practitioner Conduct</h2>
         <p>
-          Practitioners are independent contractors, not employees. Four Corners Village does not
+          Practitioners are independent contractors, not employees. 4 Corners Village does not
           provide medical, psychological, or legal advice. Practitioners must comply with all
           applicable professional licensing in their jurisdiction.
         </p>
@@ -62,7 +62,7 @@ export default function TermsPage() {
 
         <h2>7. Intellectual Property</h2>
         <p>
-          Practitioners retain ownership of content they upload. Four Corners is granted a
+          Practitioners retain ownership of content they upload. 4 Corners Village is granted a
           non-exclusive license to host and display practitioner content within the platform.
         </p>
 

@@ -7,13 +7,13 @@ export function TvSubscribedEmail(opts: {
   const name = opts.recipientName ? escapeHtml(opts.recipientName) : "friend";
   const watchUrl = opts.watchUrl;
 
-  const text = `You're subscribed to Four Corners Vintage TV.
+  const text = `You're subscribed to 4 Corners Vintage TV.
 
 Curated documentaries on consciousness, healing, the cosmos, and the ancient ways. New rotations monthly.
 
 Start watching: ${watchUrl}
 
-— Four Corners Village`;
+— 4 Corners Village`;
 
   const bodyHtml = `
     <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#fbbf24;">Welcome to Vintage TV, ${name}.</h1>

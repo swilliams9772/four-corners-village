@@ -146,7 +146,7 @@ export function DashboardShell({
             )}
           >
             {collapsed ? (
-              <Link href="/" aria-label="Four Corners — home">
+              <Link href="/" aria-label="4 Corners Village — home">
                 <BrandMark variant="mark" size={28} />
               </Link>
             ) : (

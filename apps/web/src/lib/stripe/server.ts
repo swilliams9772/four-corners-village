@@ -13,7 +13,7 @@ export function getStripe(): Stripe {
     apiVersion: "2025-01-27.acacia" as Stripe.LatestApiVersion,
     typescript: true,
     appInfo: {
-      name: "Four Corners Village",
+      name: "4 Corners Village",
       version: "0.1.0",
     },
   });

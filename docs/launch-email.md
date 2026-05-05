@@ -20,7 +20,7 @@ A/B test A vs. B with the first two batches.
 You signed up to be among the first.
 Today the village opens — small, quiet, and only to you for now.
 
-Four Corners is a digital sanctuary for sacred living:
+4 Corners Village is a digital sanctuary for sacred living:
   · Vintage TV — curated documentaries on lineage, ceremony, and inner work
   · Practitioner Spaces — sovereign sub-spaces for guides, healers, and teachers
   · Digital Altars + Oracle — collective intention, lunar timing, daily reflection
@@ -43,7 +43,7 @@ If anything feels off — broken, too fast, too noisy — tell us. We'd rather f
 together than launch louder.
 
 In rhythm,
-The Four Corners team
+The 4 Corners Village team
 hello@fourcorners.village
 
 ---

@@ -1,4 +1,4 @@
-# Four Corners — Monorepo
+# 4 Corners Village — Monorepo
 
 A turborepo + pnpm workspace housing the web app, mobile app, and shared packages.
 

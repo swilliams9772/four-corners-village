@@ -46,7 +46,7 @@ export function SiteHeader({ user }: { user: { email: string } | null }) {
         <Link
           href="/"
           className="-m-2 rounded-md p-2 outline-none transition-opacity duration-quick hover:opacity-80 focus-visible:ring-2 focus-visible:ring-border-focus"
-          aria-label="Four Corners — home"
+          aria-label="4 Corners Village — home"
         >
           <BrandMark size={28} />
         </Link>

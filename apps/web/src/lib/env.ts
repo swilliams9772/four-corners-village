@@ -16,7 +16,7 @@ function required(name: string, value: string | undefined): string {
 export const env = {
   app: {
     url: process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-    name: process.env.NEXT_PUBLIC_APP_NAME ?? "Four Corners Village",
+    name: process.env.NEXT_PUBLIC_APP_NAME ?? "4 Corners Village",
   },
   supabase: {
     url: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
@@ -68,7 +68,7 @@ export const env = {
   },
   resend: {
     apiKey: process.env.RESEND_API_KEY ?? "",
-    from: process.env.RESEND_FROM_EMAIL ?? "Four Corners <hello@fourcorners.village>",
+    from: process.env.RESEND_FROM_EMAIL ?? "4 Corners Village <hello@4cornersvillage.com>",
     get configured() {
       return Boolean(process.env.RESEND_API_KEY);
     },

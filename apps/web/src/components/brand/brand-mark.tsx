@@ -1,28 +1,49 @@
 import * as React from "react";
+import Image from "next/image";
 
 /**
- * The Four Corners mark — a four-pointed star inscribed in a circle.
+ * 4 Corners Village brand mark.
  *
- * Each point hints at one of the four directions / elements:
- *   top    → North/Earth   (mountain)
- *   right  → East/Air      (rising sun)
- *   bottom → South/Fire    (flame)
- *   left   → West/Water    (wave)
+ * Three variants:
  *
- * Negative space inside the central diamond reads as a doorway / portal.
- * Designed to scale from 16 (favicon) to 1024 (App Store) without losing form.
+ *   • `mark`      — minimal four-pointed-star SVG. Use at favicon / navbar
+ *                   sizes (16-40px) where the medallion would lose detail.
+ *   • `wordmark`  — `mark` paired with the "4 Corners" display lockup.
+ *                   This is the default header / footer treatment.
+ *   • `medallion` — the full gold compass-rose medallion artwork.
+ *                   Use in heroes, login screens, OG cards, app store
+ *                   listings — anywhere ≥ 96px square.
+ *
+ * The SVG mark is intentionally simple: a four-pointed star inscribed in a
+ * circle, with a doorway-shaped negative space at the center. It scales from
+ * 16 to 1024 without losing form and inherits `currentColor`, so it reads on
+ * any theme background.
  */
 export function BrandMark({
   size = 32,
   className,
   variant = "wordmark",
-  title = "Four Corners",
+  title = "4 Corners Village",
 }: {
   size?: number;
   className?: string;
-  variant?: "mark" | "wordmark";
+  variant?: "mark" | "wordmark" | "medallion";
   title?: string;
 }) {
+  if (variant === "medallion") {
+    return (
+      <Image
+        src="/brand/logo-medallion.png"
+        alt={title}
+        width={size}
+        height={size}
+        priority
+        className={className}
+        style={{ width: size, height: size, objectFit: "contain" }}
+      />
+    );
+  }
+
   if (variant === "mark") {
     return (
       <svg
@@ -62,7 +83,7 @@ export function BrandMark({
           lineHeight: 1,
         }}
       >
-        Four Corners
+        4 Corners
       </span>
     </span>
   );

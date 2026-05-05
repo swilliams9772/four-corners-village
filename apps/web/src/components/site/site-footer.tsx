@@ -33,7 +33,7 @@ const columns = [
   {
     heading: "Connect",
     links: [
-      { href: "mailto:hello@fourcorners.village", label: "hello@" },
+      { href: "mailto:hello@4cornersvillage.com", label: "hello@" },
       { href: "/legal/terms", label: "Terms" },
       { href: "/legal/privacy", label: "Privacy" },
       { href: "/legal/dmca", label: "DMCA" },
@@ -77,7 +77,7 @@ export function SiteFooter() {
         <div className="hairline my-10" />
         <div className="flex flex-col items-start justify-between gap-3 text-caption text-ink-muted md:flex-row md:items-center">
           <p>
-            © {new Date().getFullYear()} Four Corners Village · Crafted with care across the four
+            © {new Date().getFullYear()} 4 Corners Village · Crafted with care across the four
             directions.
           </p>
           <p className="smallcaps">Made for the seekers</p>

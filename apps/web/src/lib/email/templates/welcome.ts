@@ -7,7 +7,7 @@ export function WelcomeEmail(opts: { recipientName: string | null }): Email {
   const tvUrl = `${env.app.url}/tv`;
   const oracleUrl = `${env.app.url}/oracle`;
 
-  const text = `Welcome to Four Corners Village, ${name}.
+  const text = `Welcome to 4 Corners Village, ${name}.
 
 Your account is live. From your dashboard you can browse practitioners, watch Vintage TV, and consult the Oracle.
 
@@ -15,7 +15,7 @@ Dashboard: ${dashboardUrl}
 Vintage TV: ${tvUrl}
 Oracle: ${oracleUrl}
 
-— Four Corners Village`;
+— 4 Corners Village`;
 
   const bodyHtml = `
     <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#fbbf24;">Welcome, ${name}.</h1>
@@ -32,7 +32,7 @@ Oracle: ${oracleUrl}
   `;
 
   return {
-    html: emailShell({ previewText: `Welcome to Four Corners Village, ${name}.`, bodyHtml }),
+    html: emailShell({ previewText: `Welcome to 4 Corners Village, ${name}.`, bodyHtml }),
     text,
   };
 }

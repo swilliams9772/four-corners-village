@@ -142,7 +142,7 @@ export async function approvePractitioner(practitionerId: string) {
       if (profile?.email) {
         await sendEmail({
           to: profile.email,
-          subject: "Your Four Corners Village application is approved",
+          subject: "Your 4 Corners Village application is approved",
           body: PractitionerApprovedEmail({
             practitionerName: practitioner.display_name as string,
             spaceUrl: `${env.app.url}/v/${practitioner.slug}`,

@@ -9,7 +9,7 @@ export function PractitionerApprovedEmail(opts: {
 
   const text = `Welcome, ${name}.
 
-Your application to Four Corners Village has been approved.
+Your application to 4 Corners Village has been approved.
 
 Next steps:
 1. Complete Stripe Connect onboarding so payouts can flow to you.
@@ -19,7 +19,7 @@ Next steps:
 Continue onboarding: ${opts.onboardingUrl}
 Your space (once live): ${opts.spaceUrl}
 
-— Four Corners Village`;
+— 4 Corners Village`;
 
   const bodyHtml = `
     <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#34d399;">You're in, ${name}.</h1>
@@ -42,7 +42,7 @@ Your space (once live): ${opts.spaceUrl}
 
   return {
     html: emailShell({
-      previewText: `Welcome to Four Corners Village. You've been approved.`,
+      previewText: `Welcome to 4 Corners Village. You've been approved.`,
       bodyHtml,
     }),
     text,

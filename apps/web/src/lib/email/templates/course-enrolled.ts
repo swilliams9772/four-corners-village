@@ -20,7 +20,7 @@ export function CourseEnrolledEmail(opts: {
 
 ${textPractitioner}Open the course: ${opts.courseUrl}
 
-— Four Corners Village`;
+— 4 Corners Village`;
 
   const bodyHtml = `
     <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#34d399;">You're enrolled, ${name}.</h1>

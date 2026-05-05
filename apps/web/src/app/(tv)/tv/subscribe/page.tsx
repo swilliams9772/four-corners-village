@@ -33,7 +33,7 @@ export default async function SubscribePage({
           <Reveal>
             <Badge variant="air" className="mb-5">
               <Tv className="size-3" />
-              Four Corners Vintage TV
+              4 Corners Vintage TV
             </Badge>
           </Reveal>
           <Reveal delay={120}>

@@ -1,6 +1,6 @@
 # Mobile subscription model — Reader app
 
-**Decision (locked):** Four Corners ships its iOS and Android apps as **Reader apps** under Apple's [External Link Account Entitlement](https://developer.apple.com/documentation/storekit/external_link_account) and Google Play's [equivalent allowance](https://support.google.com/googleplay/android-developer/answer/12435178). Subscriptions to **Vintage TV** and to practitioner tiers (Initiate / Guide / Sanctuary) are sold **only on the web**. The mobile app authenticates the existing entitlement and lets paying users consume content.
+**Decision (locked):** 4 Corners Village ships its iOS and Android apps as **Reader apps** under Apple's [External Link Account Entitlement](https://developer.apple.com/documentation/storekit/external_link_account) and Google Play's [equivalent allowance](https://support.google.com/googleplay/android-developer/answer/12435178). Subscriptions to **Vintage TV** and to practitioner tiers (Initiate / Guide / Sanctuary) are sold **only on the web**. The mobile app authenticates the existing entitlement and lets paying users consume content.
 
 ## Why
 

@@ -86,7 +86,7 @@ export async function signUp(formData: FormData) {
   try {
     await sendEmail({
       to: parsed.data.email,
-      subject: "Welcome to Four Corners Village",
+      subject: "Welcome to 4 Corners Village",
       body: WelcomeEmail({ recipientName: parsed.data.fullName ?? null }),
     });
   } catch (err) {

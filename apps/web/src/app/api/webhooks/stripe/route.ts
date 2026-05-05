@@ -245,7 +245,7 @@ async function sendTvSubscribedEmailIfApplicable(
 
     await sendEmail({
       to: profile.email,
-      subject: "Welcome to Four Corners Vintage TV",
+      subject: "Welcome to 4 Corners Vintage TV",
       body: TvSubscribedEmail({
         recipientName: profile.display_name ?? profile.full_name ?? null,
         watchUrl: `${env.app.url}/tv`,

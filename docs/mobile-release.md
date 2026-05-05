@@ -1,6 +1,6 @@
 # Mobile release playbook — EAS Build, TestFlight, Play Internal
 
-This is the operating manual for shipping the Four Corners Village iOS and Android apps. It assumes [docs/launch.md](launch.md) has already been completed (Apple Developer + Play Console enrollment, Cloudflare/Supabase/Stripe live, etc.) and that [docs/mobile-iap.md](mobile-iap.md) is in effect (Reader-app pattern, no IAP).
+This is the operating manual for shipping the 4 Corners Village iOS and Android apps. It assumes [docs/launch.md](launch.md) has already been completed (Apple Developer + Play Console enrollment, Cloudflare/Supabase/Stripe live, etc.) and that [docs/mobile-iap.md](mobile-iap.md) is in effect (Reader-app pattern, no IAP).
 
 ## Tooling install (one-time)
 
@@ -55,7 +55,7 @@ Server-only secrets (`SUPABASE_SERVICE_ROLE_KEY`, `STRIPE_SECRET_KEY`, `CLOUDFLA
 ## Google-side prerequisites
 
 1. Play Console → **Create app**.
-   - App name: Four Corners Village
+   - App name: 4 Corners Village
    - Package name: `village.fourcorners.app`
    - App or game: App
    - Free or paid: Free
@@ -118,7 +118,7 @@ Android: from Internal → Closed → Open → Production via Play Console → R
 
 ## App Store Review notes (paste into App Store Connect → App Review)
 
-> Four Corners Village is a Reader app. All subscriptions are sold on our website at https://fourcorners.village under the "Vintage TV" plan. The mobile app authenticates the user's existing entitlement via our Supabase backend and lets them stream on-demand video and access live community features. There is no in-app purchase. To test as a paid user:
+> 4 Corners Village is a Reader app. All subscriptions are sold on our website at https://4cornersvillage.com under the "Vintage TV" plan. The mobile app authenticates the user's existing entitlement via our Supabase backend and lets them stream on-demand video and access live community features. There is no in-app purchase. To test as a paid user:
 >
 > Email: review+ios@fourcorners.village
 > Password: <set in App Store Connect "Sign-In Information">

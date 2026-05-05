@@ -19,7 +19,7 @@ function read(name: string): string {
 export const env = {
   app: {
     url: read("APP_URL") || "https://fourcorners.village",
-    name: "Four Corners Village",
+    name: "4 Corners Village",
   },
   supabase: {
     url: read("SUPABASE_URL"),
