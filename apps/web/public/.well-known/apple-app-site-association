@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.village.fourcorners.app"],
+        "components": [
+          { "/": "/v/*", "comment": "Practitioner sub-spaces" },
+          { "/": "/tv", "comment": "Vintage TV browse" },
+          { "/": "/tv/*", "comment": "Vintage TV titles" },
+          { "/": "/altars", "comment": "Digital Altars" },
+          { "/": "/oracle", "comment": "AI Oracle" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TEAMID.village.fourcorners.app"]
+  }
+}

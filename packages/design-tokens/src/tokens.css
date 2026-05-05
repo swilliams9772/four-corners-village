@@ -1,0 +1,228 @@
+/* ============================================================
+   Four Corners — Design Tokens (CSS variables)
+   Generated from packages/design-tokens. Imported by apps/web.
+   ============================================================ */
+
+:root {
+  /* primitive ramps — exposed in case raw access is needed */
+  --color-ink-50: #f4f2f8;
+  --color-ink-100: #e1deea;
+  --color-ink-200: #bdb7cf;
+  --color-ink-300: #9890b0;
+  --color-ink-400: #736b92;
+  --color-ink-500: #544d75;
+  --color-ink-600: #3c375b;
+  --color-ink-700: #2a2742;
+  --color-ink-800: #1b1a2e;
+  --color-ink-900: #11101f;
+  --color-ink-950: #08081a;
+
+  --color-parchment-50: #fbf8f2;
+  --color-parchment-100: #f4efe2;
+  --color-parchment-200: #e9dfc6;
+  --color-parchment-300: #dbcba1;
+  --color-parchment-400: #c8b27a;
+
+  --color-lunar-300: #c7c3ec;
+  --color-lunar-400: #a8a2dd;
+  --color-lunar-500: #8b83cb;
+  --color-lunar-600: #7068b0;
+
+  --color-air-300: #fcd24e;
+  --color-air-400: #fbc02c;
+  --color-air-500: #f2a50c;
+  --color-air-600: #d17f08;
+
+  --color-fire-300: #ff8e70;
+  --color-fire-400: #ff5f3f;
+  --color-fire-500: #f23b1d;
+  --color-fire-600: #d02410;
+
+  --color-water-300: #5dc2da;
+  --color-water-400: #2ba3c0;
+  --color-water-500: #1685a2;
+  --color-water-600: #106b85;
+
+  --color-earth-300: #76cc93;
+  --color-earth-400: #41ae6b;
+  --color-earth-500: #249050;
+  --color-earth-600: #187442;
+
+  /* spatial */
+  --space-micro: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 40px;
+  --space-4xl: 48px;
+  --space-5xl: 64px;
+  --space-6xl: 80px;
+  --space-cathedral: 256px;
+
+  /* radii */
+  --radius-sharp: 2px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-3xl: 40px;
+  --radius-pill: 9999px;
+
+  /* motion */
+  --ease-silk: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-velvet: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-ceremonial: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-sharp: cubic-bezier(0.4, 0, 0.6, 1);
+
+  --dur-instant: 80ms;
+  --dur-quick: 160ms;
+  --dur-gentle: 280ms;
+  --dur-normal: 420ms;
+  --dur-slow: 600ms;
+  --dur-ceremony: 900ms;
+  --dur-ritual: 1400ms;
+
+  /* type */
+  --font-display: "Fraunces", "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-body: "Geist", "Geist Sans", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "JetBrains Mono", monospace;
+
+  /* elevation */
+  --shadow-whisper: 0 1px 2px rgba(8, 8, 26, 0.18);
+  --shadow-rest: 0 4px 12px -2px rgba(8, 8, 26, 0.32);
+  --shadow-raised: 0 8px 24px -6px rgba(8, 8, 26, 0.4),
+    0 2px 6px rgba(8, 8, 26, 0.18);
+  --shadow-altar: 0 24px 48px -12px rgba(8, 8, 26, 0.5),
+    0 8px 16px -4px rgba(8, 8, 26, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  --glow-air: 0 0 32px rgba(251, 192, 44, 0.35);
+  --glow-fire: 0 0 32px rgba(255, 95, 63, 0.35);
+  --glow-water: 0 0 32px rgba(43, 163, 192, 0.35);
+  --glow-earth: 0 0 32px rgba(65, 174, 107, 0.35);
+  --glow-lunar: 0 0 48px rgba(168, 162, 221, 0.35);
+
+  /* lunar phase progression — set by JS via [data-moon] attribute */
+  --moon-progress: 0;
+  --moon-glow-strength: 0.35;
+}
+
+/* ============================================================
+   DARK THEME (default)
+   ============================================================ */
+:root,
+[data-theme="dark"] {
+  --bg-canvas: var(--color-ink-950);
+  --bg-elevated: var(--color-ink-900);
+  --bg-sunken: #000000;
+  --bg-overlay: rgba(8, 8, 26, 0.72);
+  --bg-glass: rgba(27, 26, 46, 0.55);
+
+  --text-primary: var(--color-parchment-50);
+  --text-secondary: var(--color-ink-200);
+  --text-muted: var(--color-ink-400);
+  --text-inverse: var(--color-ink-950);
+  --text-accent: var(--color-air-400);
+
+  --border-subtle: rgba(241, 232, 211, 0.06);
+  --border-default: rgba(241, 232, 211, 0.1);
+  --border-strong: rgba(241, 232, 211, 0.2);
+  --border-focus: var(--color-air-400);
+
+  --brand: var(--color-air-400);
+  --brand-hover: var(--color-air-300);
+  --brand-active: var(--color-air-500);
+  --brand-foreground: var(--color-ink-950);
+
+  --air: var(--color-air-400);
+  --air-soft: rgba(251, 192, 44, 0.16);
+  --air-foreground: #fef1c7;
+
+  --fire: var(--color-fire-400);
+  --fire-soft: rgba(255, 95, 63, 0.16);
+  --fire-foreground: #ffdfd3;
+
+  --water: var(--color-water-300);
+  --water-soft: rgba(93, 194, 218, 0.16);
+  --water-foreground: #d2eef4;
+
+  --earth: var(--color-earth-400);
+  --earth-soft: rgba(65, 174, 107, 0.18);
+  --earth-foreground: #d5f2dd;
+
+  --lunar: var(--color-lunar-300);
+  --lunar-soft: rgba(199, 195, 236, 0.16);
+  --lunar-foreground: #f2f1fb;
+
+  --success: var(--color-earth-400);
+  --success-soft: rgba(65, 174, 107, 0.18);
+  --success-foreground: #eefaf1;
+
+  --danger: var(--color-fire-400);
+  --danger-soft: rgba(255, 95, 63, 0.18);
+  --danger-foreground: #fff1ed;
+
+  color-scheme: dark;
+}
+
+/* ============================================================
+   LIGHT THEME
+   ============================================================ */
+[data-theme="light"] {
+  --bg-canvas: #fbf8f2;
+  --bg-elevated: #ffffff;
+  --bg-sunken: var(--color-parchment-100);
+  --bg-overlay: rgba(36, 29, 16, 0.4);
+  --bg-glass: rgba(255, 255, 255, 0.65);
+
+  --text-primary: var(--color-ink-900);
+  --text-secondary: var(--color-ink-700);
+  --text-muted: var(--color-ink-500);
+  --text-inverse: var(--color-parchment-50);
+  --text-accent: var(--color-fire-600);
+
+  --border-subtle: rgba(17, 16, 31, 0.06);
+  --border-default: rgba(17, 16, 31, 0.1);
+  --border-strong: rgba(17, 16, 31, 0.16);
+  --border-focus: var(--color-fire-600);
+
+  --brand: var(--color-fire-600);
+  --brand-hover: var(--color-fire-500);
+  --brand-active: #a91710;
+  --brand-foreground: var(--color-parchment-50);
+
+  --air: var(--color-air-600);
+  --air-soft: #fef1c7;
+  --air-foreground: #874810;
+
+  --fire: var(--color-fire-600);
+  --fire-soft: #ffdfd3;
+  --fire-foreground: #871513;
+
+  --water: var(--color-water-600);
+  --water-soft: #d2eef4;
+  --water-foreground: #134659;
+
+  --earth: var(--color-earth-600);
+  --earth-soft: #d5f2dd;
+  --earth-foreground: #13492e;
+
+  --lunar: var(--color-lunar-600);
+  --lunar-soft: #f2f1fb;
+  --lunar-foreground: #3d386a;
+
+  --success: var(--color-earth-600);
+  --success-soft: #d5f2dd;
+  --success-foreground: #13492e;
+
+  --danger: var(--color-fire-600);
+  --danger-soft: #ffdfd3;
+  --danger-foreground: #871513;
+
+  color-scheme: light;
+}

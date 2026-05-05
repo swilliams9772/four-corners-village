@@ -1,0 +1,237 @@
+@import "@four-corners/design-tokens/css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   FOUNDATIONS
+   ============================================================ */
+@layer base {
+  :root {
+    /* shadcn radius compat — derived from token */
+    --radius: 0.875rem;
+  }
+
+  *,
+  *::before,
+  *::after {
+    border-color: var(--border-default);
+  }
+
+  html {
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1, "ss02" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    transition: background-color var(--dur-ceremony) var(--ease-silk),
+      color var(--dur-ceremony) var(--ease-silk);
+  }
+
+  ::selection {
+    background: var(--brand);
+    color: var(--brand-foreground);
+  }
+
+  /* The serif gets the optical-size axis automatically via opsz */
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    font-feature-settings: "ss01" 1, "ss02" 1, "kern" 1;
+    font-variation-settings: "opsz" 96;
+    letter-spacing: -0.02em;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 36;
+    letter-spacing: -0.015em;
+  }
+
+  /* Modern focus ring — sacred ring, not browser default */
+  :focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 3px;
+    border-radius: var(--radius-md);
+    transition: outline-offset var(--dur-quick) var(--ease-velvet);
+  }
+}
+
+/* ============================================================
+   AMBIENT LAYERS — used in hero, altars, oracle
+   ============================================================ */
+
+/* Subtle CRT scanlines for the Vintage TV vibe */
+.tv-scanlines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.16) 0px,
+    rgba(0, 0, 0, 0.16) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+/* Watermark overlay on TV player surface */
+.tv-watermark {
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Glass — subtle backdrop blur with the right border feel */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-strong {
+  background: var(--bg-glass);
+  backdrop-filter: blur(40px) saturate(1.6);
+  -webkit-backdrop-filter: blur(40px) saturate(1.6);
+  border: 1px solid var(--border-default);
+}
+
+/* Aurora — slow gradient that drifts across the hero */
+.aurora {
+  position: absolute;
+  inset: -25%;
+  background:
+    radial-gradient(
+      ellipse 60% 45% at 30% 35%,
+      var(--air-soft) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 55% 50% at 70% 60%,
+      var(--lunar-soft) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 45% 55% at 50% 80%,
+      var(--fire-soft) 0%,
+      transparent 65%
+    );
+  filter: blur(48px);
+  opacity: calc(0.55 + var(--moon-glow-strength) * 0.45);
+  pointer-events: none;
+  animation: aurora-drift 32s var(--ease-silk) infinite;
+}
+
+@keyframes aurora-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(2%, -1.5%, 0) rotate(0.6deg);
+  }
+  66% {
+    transform: translate3d(-1.5%, 1%, 0) rotate(-0.4deg);
+  }
+}
+
+/* Mandala dust — barely-visible particle overlay for sacred sections */
+.mandala-dust {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(circle at 50% 50%, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 0%, transparent 70%);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+/* Reveal motion — element slides up gently when scrolled into view */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--dur-slow) var(--ease-silk),
+    transform var(--dur-slow) var(--ease-silk);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hairline divider that fades in at edges */
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border-default) 20%,
+    var(--border-default) 80%,
+    transparent
+  );
+}
+
+/* Typographic accents */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+
+/* Scroll snap helpers for cinematic carousels */
+.snap-cinema {
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 24px;
+}
+
+.snap-cinema > * {
+  scroll-snap-align: start;
+}
+
+/* No-scrollbar variant for horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .aurora,
+  .mandala-dust {
+    animation: none !important;
+  }
+}

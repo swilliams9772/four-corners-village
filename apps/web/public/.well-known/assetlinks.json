@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "village.fourcorners.app",
+      "sha256_cert_fingerprints": [
+        "PLACEHOLDER:REPLACE-WITH-RELEASE-SHA256-FROM-GOOGLE-PLAY-CONSOLE"
+      ]
+    }
+  }
+]
